@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="heading">CodePad</h1>
+        <div class="left">
+            <div class="html">
+                <h2><i class="fa-solid fa-code"></i>HTML</h2>
+                <textarea name="html" id="html"></textarea>
+            </div>
+            <div class="css">
+                <h2><i class="fa-brands fa-css3"></i>CSS</h2>
+                <textarea name="css" id="css"></textarea>
+            </div>
+            <div class="js">
+                <h2><i class="fa-brands fa-js"></i>JavaScript</h2>
+                <textarea name="js" id="js"></textarea>
+            </div>
+        </div>
+        <button onclick="run()"><i class="fa-solid fa-caret-right"></i>run</button>
+        <div class="right">
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
